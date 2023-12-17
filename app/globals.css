@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -14,7 +11,7 @@ html {
   
 
   body {
-    @apply bg-[#f7f7f7] text-black tracking-wide
+    @apply bg-gray-200 text-black tracking-wide
   }
 
   h1,

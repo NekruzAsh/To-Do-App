@@ -5,8 +5,8 @@ const Navbar = () => {
     //wrapper div
     <div className=''>
 
-        <div>
-            <ul className='text-purple-700'>
+        <div className='font-bold uppecase py-6 px-16 '>
+            <ul className='text-purple-600'>
                 <li>Make a note</li>
             </ul>
         </div>
