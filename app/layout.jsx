@@ -5,7 +5,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 //components
-import Navbar from './components/Navbar.jsx'
 import Main from './components/main.jsx'
 
 export const metadata = {
