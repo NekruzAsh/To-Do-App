@@ -4,13 +4,18 @@ import { useState } from "react";
 
 const Navbar = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-purple-300 p-6 rounded-md">
-        <div className="grid lg:grid-cols-2 lg:gap-6">
-      <textarea className="shadow-sm shadow-gray-500 rounded-sm border-2 border-gray-300 w-68 h-40 p-4"
-      placeholder="Type your note..." name="text">
-
-      </textarea>
+    
+    <div className="min-h-screen flex flex-col items-center justify-center">
+  <div>
+    <h1 className="uppercase py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-400 to-indigo-500">To-do App</h1>
+  </div>
+  <div className="bg-purple-300 p-6 rounded-md shadow-md shadow-gray-500 mt-[70px]">
+    <div className="grid lg:grid-cols-2 lg:gap-6">
+      <textarea
+        className="shadow-sm shadow-gray-500 rounded-sm border-2 border-gray-300 w-68 h-40 p-4"
+        placeholder="Type your note..."
+        name="text"
+      ></textarea>
 
       <ul className="text-purple-600 text-center text-2xl mt-6 lg:mt-12">
         <button className="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
@@ -21,8 +26,9 @@ const Navbar = () => {
         </button>
       </ul>
     </div>
-    </div>
-    </div>
+  </div>
+</div>
+
   );
 };
 
