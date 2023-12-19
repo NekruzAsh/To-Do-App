@@ -1,5 +1,0 @@
-
-const ITask = {
-    id: '',
-    text: '',
-};
