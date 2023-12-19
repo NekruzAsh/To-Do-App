@@ -37,7 +37,7 @@ const TodoAPP = () => {
         onChange={(e) => setNewNote(e.target.value)}
       ></textarea>
 
-      <ul className="text-purple-600 text-center text-2xl mt-6 lg:mt-12">
+      <ul className="text-purple-600 text-center text-2xl mt-6 lg:mt-7">
         <button className="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow"
         onClick={addNote}>
           <div className="absolute inset-0 w-3 bg-purple-400 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
@@ -49,23 +49,24 @@ const TodoAPP = () => {
     </div>
   </div>
   <div className="grid grid-cols-2 gap-4 mt-6">
-    {notes.map((note, index) => (
-      <div
-        key={index}
-        className="bg-yellow-200 p-4 rounded-md shadow-md flex items-center justify-between"
+  {notes.map((note, index) => (
+    <div
+      key={index}
+      className="bg-yellow-200 p-4 rounded-md shadow-md max-w-md"
+      style={{ wordWrap: 'break-word' }}
+    >
+      <p className="whitespace-pre-wrap">
+        {note}
+      </p>
+      <button
+        className="text-red-500 mt-2"
+        onClick={() => deleteNote(index)}
       >
-        <span>
-          {note}
-        </span>
-        <button
-          className="text-red-500"
-          onClick={() => deleteNote(index)}
-        >
-          Delete
-        </button>
-      </div>
-    ))}
-  </div>
+        Delete
+      </button>
+    </div>
+  ))}
+</div>
 </div>
 
   );
