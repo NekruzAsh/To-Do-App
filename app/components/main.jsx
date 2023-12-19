@@ -42,7 +42,7 @@ const TodoAPP = () => {
         onClick={addNote}>
           <div className="absolute inset-0 w-3 bg-purple-400 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
           <li className="relative text-black group-hover:text-white">
-            Make a note
+            Make a note +
           </li>
         </button>
       </ul>
