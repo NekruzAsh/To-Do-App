@@ -30,7 +30,7 @@ const TodoAPP = () => {
   <div className="bg-purple-300 p-6 rounded-md shadow-md shadow-gray-500 mt-[70px]">
     <div className="grid lg:grid-cols-2 lg:gap-6">
       <textarea
-        className="shadow-sm shadow-gray-500 rounded-sm border-2 border-gray-300 w-full min-h-[100px] p-4 resize-none"
+        className="shadow-sm shadow-gray-500 text-white rounded-sm border-2 border-gray-300 w-full min-h-[100px] p-4 resize-none"
         placeholder="Type your note..."
         name="text"
         value={newNote}
