@@ -1,0 +1,5 @@
+
+const ITask = {
+    id: '',
+    text: '',
+};
