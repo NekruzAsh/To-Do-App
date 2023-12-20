@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <div className="min-h-screen flex flex-col items-center justify-center">
         
-          <h1 className="uppercase py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-400 to-indigo-500">
+          <h1 className="uppercase py-4 mt-16 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-400 to-indigo-500">
             To-do App
           </h1>
       

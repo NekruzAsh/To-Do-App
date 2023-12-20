@@ -11,12 +11,11 @@ const addTask = ({input, setInput, todos, setTodos}) => {
         setInput("");
     };
   return (
-    <div className="bg-purple-300 p-6 rounded-md shadow-md shadow-gray-500 mt-[70px]">
+    <div className="bg-purple-300 p-[70px] lg:p-[100px] rounded-md shadow-md shadow-gray-500 mt-[70px]">
       <div className="grid lg:grid-cols lg:gap-6">
         <form onSubmit={onFormSubmit}>
         <textarea
-
-          className="shadow-sm shadow-gray-500 text-white rounded-sm border-2 border-gray-300 w-full min-h-[100px] p-4 resize-none"
+          className="shadow-sm shadow-gray-500 text-white rounded-sm border-2 border-gray-300 w-full min-h-[100px] p-4 h-full mt-[-35px] resize-none"
           placeholder="Type your note..."
           type="text"
           value={input}

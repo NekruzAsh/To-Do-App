@@ -49,7 +49,7 @@ const TodoList = ({ todos, setTodos }) => {
         {/* Table headers */}
         <thead className='text-gray-400'>
           <tr>
-            <th>Note</th>
+            <th>Notes</th>
             <th>Actions</th>
           </tr>
         </thead>
