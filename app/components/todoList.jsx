@@ -81,7 +81,7 @@ const TodoList = ({ todos, setTodos }) => {
                 )}
               </td>
               <td>
-                <div>
+                <div className='flex'>
                   <button className="text-gray-700" onClick={() => handleEdit(todo.id)}>
                     <FaEdit size={25} />
                   </button>
