@@ -7,17 +7,14 @@ const TodoList = ({ todos, setTodos }) => {
   const [editingId, setEditingId] = useState(null);
 
   const handleEdit = (id) => {
-    // Set the editingId to enable editing mode for the corresponding note
     setEditingId(id);
   };
 
   const handleDelete = (id) => {
-    // Add logic for deleting a todo item
     setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
   };
 
   const handleComplete = (id) => {
-    // Add logic for marking a todo item as completed
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -26,18 +23,31 @@ const TodoList = ({ todos, setTodos }) => {
   };
 
   const handleKeyPress = (event, id) => {
-    // Save the edited note on Enter key press
     if (event.key === 'Enter') {
       setEditingId(null);
-      // Implement logic to save the edited note (e.g., update the state)
+      
+    }
+  };
+
+  const getNoteStyle = (length) => {
+    if (length > 150) {
+      return {
+        fontSize: '16px',
+        margin: '10px 0',
+      };
+    } else {
+      return {
+        fontSize: '18px',
+        margin: '15px 0',
+      };
     }
   };
 
   return (
-    <div className=''>
+    <div className='mt-10 p-[16px] m-[200px]'>
       <table className="table">
         {/* Table headers */}
-        <thead>
+        <thead className='text-gray-400'>
           <tr>
             <th>Note</th>
             <th>Actions</th>
@@ -52,7 +62,8 @@ const TodoList = ({ todos, setTodos }) => {
                   <input
                     type="text"
                     value={todo.title}
-                    className={`list ${todo.completed ? 'completed' : ''}`}
+                    className={`list edit-input ${todo.completed ? 'completed' : ''}`}
+                    style={{ color: 'white' }} 
                     onChange={(event) =>
                       setTodos((prevTodos) =>
                         prevTodos.map((t) =>

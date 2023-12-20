@@ -7,6 +7,18 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.list {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+
+.completed {
+  text-decoration: line-through;
+}
+
 @layer base {
   
 
