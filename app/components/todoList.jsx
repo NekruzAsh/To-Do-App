@@ -33,7 +33,8 @@ const TodoList = ({ todos, setTodos }) => {
     if (length > 150) {
       return {
         fontSize: '16px',
-        margin: '10px 0',
+        margin: 'mb-4 lg:mb-6',
+        textAlign: 'md:left lg:left-center',
       };
     } else {
       return {
@@ -45,7 +46,7 @@ const TodoList = ({ todos, setTodos }) => {
 
   return (
     <div className='mt-10 p-[16px] m-[200px]'>
-      <table className="table">
+      <table className="table w-full">
         {/* Table headers */}
         <thead className='text-gray-400'>
           <tr>
@@ -75,7 +76,7 @@ const TodoList = ({ todos, setTodos }) => {
                     onKeyPress={(event) => handleKeyPress(event, todo.id)}
                   />
                 ) : (
-                  <div className={`list ${todo.completed ? 'completed' : ''}`}>
+                  <div className={`list ${todo.completed ? 'completed' : ''} ${getNoteStyle()}`}>
                     {todo.title}
                   </div>
                 )}

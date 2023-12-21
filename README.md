@@ -2,6 +2,7 @@
 * Implementing CRUD (Create, Read, Update, Delete) operations and using 'useState' hooks with JavaScript to keep track of the input value, the list of to-do items, and the editing state.
 * Using React basic components and props to manage and pass data between components.
 * Applying dynamic styling with DaisyUI based on the length of the notes and ensuring a responsive design.
+* Using ternary operators and event handlers.
 
 
 

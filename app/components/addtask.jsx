@@ -11,6 +11,7 @@ const addTask = ({input, setInput, todos, setTodos}) => {
         setInput("");
     };
   return (
+   
     <div className="bg-purple-300 p-[70px] lg:p-[100px] rounded-md shadow-md shadow-gray-500 mt-[70px]">
       <div className="grid lg:grid-cols lg:gap-6">
         <form onSubmit={onFormSubmit}>
@@ -34,6 +35,7 @@ const addTask = ({input, setInput, todos, setTodos}) => {
         </form>
       </div>
     </div>
+    
   );
 };
 
