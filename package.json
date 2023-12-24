@@ -10,6 +10,7 @@
     "json-server": "json-server --watch data/toapp.json --port 3001"
   },
   "dependencies": {
+    "date-fns": "^3.0.6",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

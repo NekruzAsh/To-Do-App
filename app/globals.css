@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background: url('/images/snowymountains.jpg') no-repeat center center fixed;
+  min-height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 html {
   scroll-behavior: smooth;
@@ -23,7 +31,8 @@ html {
   
 
   body {
-    @apply bg-gray-200 text-black tracking-wide
+    @apply bg-gray-200 text-black tracking-wide 
+    
   }
 
   h1,
