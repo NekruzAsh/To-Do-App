@@ -34,7 +34,7 @@ const Page = () => {
 
   return (
     <div className="flex justify-center pt-40">
-      <div className="max-w-sm w-full shadow-lg bg-gray-300 p-8 rounded-md opacity-90">
+      <div className="max-w-sm w-full shadow-lg bg-gray-300 p-8 rounded-md">
         <div className="flex justify-center cursor-default bg-gray-200 rounded-3xl px-4 py-2 color-gray hover:scale-110 transition-all">
           <div className="w-full p-3">
             <h1 className="uppercase text-[45px] py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-500 to-indigo-600">
